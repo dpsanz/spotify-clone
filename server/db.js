@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-
-dotenv.config();
-const dbPassword = process.env.REACT_DB_PASSWORD;
-
 export default async function conectaNaDb(){
-    mongoose.connect(`mongodb+srv://admin:${dbPassword}@cluster0.7txhn.mongodb.net/Spotify?retryWrites=true&w=majority&appName=Cluster0`);
+    mongoose.connect(`mongodb+srv://daniel:senhazica@sanz313.4lnt5.mongodb.net/`);
 
     return mongoose.connection;
 }

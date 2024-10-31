@@ -4,7 +4,7 @@ import cors from 'cors';
 import artistas from './models/Artistas.js';
 import genero from './models/Generos.js';
 
-const app = express();
+const app = express()
 app.use(cors(
     {
         origin: "*",
