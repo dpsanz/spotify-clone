@@ -45,7 +45,7 @@ export default function Artista() {
           :
           <>
             <div className="flex items-center mb-4 gap-5">
-                <img src={artista.capa? artista.capa : '/capa.jpg'} alt="Capa do artista" className="w-[100px] h-[100px]"/>
+                <img src={artista.image? artista.image : '/capa.jpg'} alt="Capa do artista" className="w-[100px] h-[100px]"/>
                 <h1 className="text-7xl font-bold">{artista.name}</h1>
             </div>
             <p>{artista.bio}</p>

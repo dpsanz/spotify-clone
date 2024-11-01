@@ -44,6 +44,13 @@ export default function ConteudoPrincipal() {
               .map(artista => (
                 <Card key={artista._id} {...artista} />
               ))}
+            {artistas
+              .filter(genero => genero.genres.includes("Rock Alternativo"))
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .slice(0, 5)
+              .map(artista => (
+                <Card key={artista._id} {...artista} />
+              ))}
           </SliderCards>
           <SliderCards titulo="Pop">
             {artistas
